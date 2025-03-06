@@ -1,0 +1,383 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+.page {
+    display: flex;
+    margin-top: 70px;
+}
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    width: 100%;
+    height: 70px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-left: auto;
+    font-family: 'Inter';
+    font-weight: 500;
+    color: #000000;
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+}
+
+.header-box:first-child {
+    margin-right: 2rem;
+}
+
+.header-box:last-child {
+    margin-left: 2rem;
+}
+
+.header-box a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-box a:hover {
+    color: #404040;
+}
+
+.header-box:hover {
+    filter: brightness(2);
+    cursor: pointer;
+}
+
+.right-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 1.5rem;
+}
+
+.linkedin img,
+.mail img {
+    max-height: 1.3rem;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 1.5rem;
+}
+
+.linkedin img:hover,
+.mail img:hover {
+    filter: brightness(2);
+    cursor: pointer;
+}
+
+/* Content Sections */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    padding: 40px 140px;
+}
+
+.title {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 3rem;
+    flex: 1;
+}
+
+.title-sub {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 2rem;
+    flex: 1;
+}
+
+.description {
+    font-family: 'Inter';
+    font-weight: 300;
+    flex: 2;
+    font-size: 1em; 
+}
+
+.add-page {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin: 0; /* Consistent vertical spacing between sections */
+	padding: 1rem 0; /* Ensure padding inside sections */
+}
+
+#firstPage, #secondaryPage, #thirdPage, #fourthPage, #fifthPage, #sixthPage {
+	background-color: white;
+	z-index: 2;
+	width: 100%;
+	box-sizing: border-box;
+}  
+
+.section-title {
+    font-size: 2rem;
+    font-family: 'Inter';
+    font-weight: 500;
+    text-align: center;
+    margin: 2rem 0; /* Equal spacing above and below titles */
+    color: #000000;
+  }
+
+  .grid-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 0.5rem; /* Keep smaller gaps between projects */
+	width: 100%;
+}
+
+.grid-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 14rem;
+	background-color: white;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.grid-item img {
+	max-width: 100%;
+	height: auto;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 1.5rem;
+	color: white;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	z-index: 2;
+	font-family: 'Inter';
+}
+
+.grid-item:hover .grid-item-title {
+    opacity: 1;
+}
+
+.grid-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.grid-item:hover::after {
+    opacity: 0.8;
+}
+
+.grid-item-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 1.5rem;
+	color: white;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	z-index: 2;
+	font-family: 'Inter';
+}
+
+.grid-item:hover .grid-item-title {
+    opacity: 1;
+}
+
+/* Footer */
+.main-footer {
+    position: relative;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding-bottom: 1.3rem;
+    padding-top: 2rem;
+}
+
+.main-footer-text {
+    font-size: 15px;
+    font-family: 'Inter';
+    font-weight: 300;
+    color: black;
+}
+
+body.main-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+body.main-container::-webkit-scrollbar-track {
+    background-color: #FFFFFF;
+}
+
+body.main-container::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    z-index: 4;
+}
+
+body.main-container::-webkit-scrollbar-thumb:hover {
+    background-color: #616161;
+    z-index: 4;
+}
+
+/* Fullscreen Gallery */
+.fullscreen-gallery {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -50px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.image-container img {
+    margin: auto;
+    display: none;
+}
+
+.image-container img.show {
+    display: block;
+    max-width: 100%;
+    max-height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+
+    .content {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;  
+      }
+
+    .add-page {
+        margin: 2rem 0; /* Adjust vertical spacing for smaller screens */
+      }
+
+    .title, .title-sub {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+
+    .title, .title-sub {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+    @media (max-width: 600px) {
+
+        .section-title {
+            font-size: 1.5rem;
+        }
+
+ 
+
+@media (max-width: 600px) {
+    .left-header {
+		font-size: 1rem;
+	}
+
+	.linkedin img,
+	.mail img {
+	max-height: 1rem;
+	}
+}
+    }

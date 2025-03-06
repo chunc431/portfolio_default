@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script type="text/javascript" src="main.js" defer></script>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+  <title>Chelsea's Portfolio</title>
+</head>
+<body class="main-container">
+    <div class="header">
+      <div class="left-header">
+        <div class="header-box header-box-work">
+          <a href="../index.html">
+            Work
+          </a>
+        </div>
+        <div class="header-box header-box-about">
+          <a href="../about/index.html">
+            About
+          </a>
+        </div>
+        <div class="header-box header-box-contact">
+          <a href="../contact/index.html">
+            Contact
+          </a>
+        </div>
+      </div>
+      <div class="right-header">
+        <div class="linkedin">
+          <a href="https://www.linkedin.com/in/chelsea-chun-42860224a/" target="_blank">
+            <img src="imgs/linkedin.png" alt="linkedin">
+          </a>
+        </div>
+        <div class="mail">
+          <a href="mailto: chelseachun26@gmail.com">
+            <img src="imgs/mail.png" alt="mail">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="page" id="homepage">
+      <div class="main">
+
+        <div class="main-image">
+            <div class="center">
+                <img src="imgs/main-img.png" alt="Goyo Product Packaging" onclick="openFullscreen(this)">
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="title">
+                Goyo
+            </div>
+            <div class="description">
+                This project focuses on product packaging and visual identity to explore the depths of the perfume industry and the power fragrances hold in evoking nostalgic memories and creating relaxation. I was inspired by the gentle hues and fluid nature of watercolor painting and one-line drawings, which sparked my exploration of how nostalgic scents can relax the mind. I mixed fine art and digital design to create six distinctive package designs using Adobe Illustrator, Photoshop, and Lightroom. <br>
+                <br>Goyo is a perfume brand with a primary focus on creating scents that are crafted to soothe the mind and bring a sense of nostalgia.
+            </div>
+        </div>
+
+        <div class="additional-images">
+            <div>
+                <img src="imgs/banner.png" alt="Goyo Store Banner" onclick="openFullscreen(this)">
+            </div>
+            <div>
+                <img src="imgs/card.png" alt="Goyo Business Card" onclick="openFullscreen(this)">
+            </div>
+        </div>
+
+    <div class="section" id="logo-section">
+      <div class="main">
+        <div class="content">
+            <div class="title-sub">
+                Logo Design
+            </div>
+            <div class="description">
+                The logo is a translation of the Korean word ‘고요’ which means ‘calm’ in English. This abstract representation displays a thin, fluid line forming a face, which serves as a symbol of inner beauty and tranquility of mind.
+            </div>
+        </div>
+        <div class="additional-images">
+            <div>
+                <img src="imgs/logo1.jpg" alt="Logo Design" class="logo-image" onclick="openFullscreen(this)">
+            </div>
+            <div>
+                <img src="imgs/logo-sketch.png" alt="Logo Sketches" class="logo-image" onclick="openFullscreen(this)">
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="color-palette-section">
+      <div class="main">
+        <div class="content">
+            <div class="title-sub">
+                Color Palette
+            </div>
+            <div class="description">
+                This color palette is aimed to encapsulate a range of nostalgic memories. Emphasizing muted tones, the palette is designed to produce a serene and contemplative ambiance. This choice not only complements but also highlights the delicate texture of the Hanji paper, adding depth and character to the overall presentation. The subtle interplay between the colors and the paper's texture lends a timeless quality to the work, making it both personal and universally relatable.
+            </div>
+        </div>
+        <div class="additional-images">
+            <div>
+                <img src="imgs/color-palette.png" alt="Color Palette" onclick="openFullscreen(this)">
+            </div> 
+        </div>
+      </div>
+    </div>
+    <div class="section" id="watercolor-process-section">
+      <div class="main">
+        <div class="content">
+            <div class="title-sub">
+                Watercolor Process
+            </div>
+            <div class="description">
+                This packaging design employs a unique watercolor technique to achieve a marble-like effect. The process involves blending various tones seamlessly while retaining the distinct softness characteristic of watercolor paintings. The intention behind this technique is to capture the organic flow of watercolor paints, allowing the colors to merge naturally. This approach results in a design that is both visually striking and evocative of the fluidity and spontaneity inherent in watercolor artistry.
+            </div>
+        </div>
+        <div class="additional-images">
+            <div>
+                <img src="imgs/watercolor1.jpg" alt="Watercolor Process" onclick="openFullscreen(this)">
+            </div>
+            <div>
+              <img src="imgs/watercolor2.jpg" alt="Watercolor Process" onclick="openFullscreen(this)">
+          </div>
+        </div>
+      </div>
+    </div>
+
+      </div>
+    </div>
+  <footer class="main-footer">
+    <span class="main-footer-text">@ Chelsea Chun</span>
+  </footer> 
+  <div id="fullscreen-gallery" class="fullscreen-gallery">
+      <span class="close" onclick="closeFullscreen()">&times;</span>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="image-container">
+        <!-- Images will be appended here by JavaScript -->
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

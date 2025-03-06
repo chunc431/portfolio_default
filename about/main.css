@@ -1,0 +1,243 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body, html {
+	height: 100%;
+}
+
+.page {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0; 
+}
+
+#homepage {
+	background-color: white;
+	height: 100vh; 
+	overflow-y: hidden; 
+}
+
+/* Custom Scrollbar */
+body.main-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+body.main-container::-webkit-scrollbar-track {
+    background-color: #FFFFFF;
+}
+
+body.main-container::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    z-index: 4;
+}
+
+body.main-container::-webkit-scrollbar-thumb:hover {
+    background-color: #616161;
+    z-index: 4;
+}
+
+.header {
+	position: fixed;
+	top: 0; 
+	background-color: #f2f2f2;
+	padding: 1rem;
+	width: 100%;
+	height: 70px;
+	z-index: 3;
+	display: flex;
+	align-items: center;
+  	justify-content: space-between;
+}
+.left-header {
+	display: flex;
+	align-items: center;
+	text-align: left;
+	margin-left: auto;
+	font-family: 'Inter';
+	font-weight: 500;
+	color: #000000;
+	font-size: 1.3rem;
+	margin-left: 1.5rem;
+}
+.header-box:first-child {
+	margin-right: 2rem;
+}
+.header-box:last-child {
+	margin-left: 2rem;
+}
+.header-box a {
+    text-decoration: none;
+    color: inherit;
+}
+.header-box-about {
+    font-weight: bold;
+}  
+.header-box a:hover {
+    color: #404040;
+}
+.header-box:hover {
+	filter: brightness(2);
+	cursor: pointer;
+}
+.header-box-about:hover {
+    filter: none;
+    color: inherit;
+}  
+.right-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-left: auto;
+	margin-right: 1.5rem;
+}
+
+.linkedin img,
+.mail img {
+  max-height: 1.3rem;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 1.5rem;
+}
+
+.linkedin img:hover,
+.mail img:hover {
+	filter: brightness(2);
+	cursor: pointer;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 50%;
+	padding-top: 80px; 
+	padding-bottom: 80px; 
+  }  
+
+.about {
+	text-align: center;
+	font-size: 1.5rem;
+	font-family: 'Inter';
+	font-weight: 800;
+	line-height: 1;
+	color: black;
+	margin-top: 3vh;
+}
+
+.bold-text {
+    font-weight: 700 !important;
+}
+
+.profile-img img {
+	max-width: 20%; 
+	height: auto; 
+	display: block;
+	margin: 3vh auto 0; 
+	position: relative; 
+  }    
+
+.body {
+	margin: 1vw;
+	text-align: center;
+	color: black;
+	margin-left: 10vw;
+    margin-right: 10vw;
+}
+.body h2, .body h3 {
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+	font-weight: 500;
+}  
+.body h2 {
+    margin-bottom: 1.5rem;
+} 
+
+.body h1 {
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+}  
+.body h1 {
+    margin-bottom: 1.5rem;
+} 
+
+.reg {
+	font-weight: 500;
+}
+.bold {
+	font-weight: 600;
+}
+
+.gd, .cd, .psod {
+	font-weight: bold;
+}
+
+.cd {
+	text-decoration: underline;
+}
+
+.main-footer {
+	text-align: center;
+	position: fixed;
+    bottom: 20px;
+}
+  
+.main-footer-text {
+	font-size: 15px;
+	font-family: 'Inter';
+	font-weight: 300;
+	color: black;
+	margin-bottom: 0.5rem;
+}  
+
+@media (max-width: 1300px) {
+    .body {
+        margin: 0.8rem;
+		margin-left: 2vw;
+        margin-right: 2vw;
+    }
+	.about {
+		font-size: 0.9rem;
+		margin-left: 4vw;
+		margin-right: 4vw;
+		margin-top: 2vh;
+	}
+	.body h1, .body h2, .body h3 {
+		font-size: 0.8rem;
+	}
+}
+
+@media (max-width: 600px) {
+    .main {
+		padding-top: 10px; 
+	  }  
+	  
+	.left-header {
+		font-size: 1rem;
+	}
+
+	.profile-img img {
+		max-width: 35%; 
+		margin: 1vh auto 0; 
+	  }  
+
+	.linkedin img,
+	.mail img {
+	max-height: 1rem;
+	}
+}

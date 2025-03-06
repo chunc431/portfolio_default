@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script type="text/javascript" src="main.js" defer></script>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+  <title>Chelsea's Portfolio</title>
+</head>
+<body class="main-container">
+    <div class="header">
+      <div class="left-header">
+        <div class="header-box header-box-work">
+          <a href="../index.html">
+            Work
+          </a>
+        </div>
+        <div class="header-box header-box-about">
+          <a href="../about/index.html">
+            About
+          </a>
+        </div>
+        <div class="header-box header-box-contact">
+          <a href="../contact/index.html">
+            Contact
+          </a>
+        </div>
+      </div>
+      <div class="right-header">
+        <div class="linkedin">
+          <a href="https://www.linkedin.com/in/chelsea-chun-42860224a/" target="_blank">
+            <img src="imgs/linkedin.png" alt="linkedin">
+          </a>
+        </div>
+        <div class="mail">
+          <a href="mailto: chelseachun26@gmail.com">
+            <img src="imgs/mail.png" alt="mail">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="page" id="homepage">
+      <div class="main">
+
+        <div class="main-image">
+            <div class="center">
+                <img src="imgs/packaging-1.png" alt="Kellogg's Product Packaging #1" onclick="openFullscreen(this)">
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="title">
+                Kellogg's Brand Redesign
+            </div>
+            <div class="description">
+                This proposal outlines a comprehensive reactivation of the Kellogg's brand, encompassing a new logo, innovative packaging design, and designs for promotional items. The focus of this redesign is to appeal to Kellogg's target audience: families with children and health-conscious individuals. The project aims to create a fresh, family-friendly, and health-oriented brand image, aligning Kellogg's visual identity with the evolving preferences of its consumers.
+            </div>
+        </div>
+
+        <div class="additional-images">
+            <div>
+                <img src="imgs/tote-mockup.png" alt="Kellogg's Tote Bag" onclick="openFullscreen(this)">
+            </div>
+            <div>
+                <img src="imgs/mug-mockup.png" alt="Kellogg's Mug" onclick="openFullscreen(this)">
+            </div>
+        </div>
+
+    <div class="section" id="moodboard-toolkit-section">
+      <div class="main">
+        <div class="content">
+            <div class="title-sub">
+                Mood Board & Toolkit
+            </div>
+        </div>
+        <div class="additional-images">
+            <div>
+                <img src="imgs/moodboard.png" alt="Moodboard" onclick="openFullscreen(this)">
+            </div>
+            <div>
+                <img src="imgs/toolkit.png" alt="Toolkit" onclick="openFullscreen(this)">
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="add-packaging-section">
+      <div class="main">
+        <div class="content">
+            <div class="title-sub">
+                Other Iterations
+            </div>
+        </div>
+        <div class="additional-images">
+            <div>
+                <img src="imgs/product-packaging-2.png" alt="Kellogg's Product Packaging Idea #2" onclick="openFullscreen(this)">
+            </div>
+            <div>
+                <img src="imgs/product-packaging-3.png" alt="Kellogg's Product Packaging Idea #3" onclick="openFullscreen(this)">
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="pop-up-section">
+      <div class="main">
+        <div class="content">
+            <div class="title-sub">
+                Pop Up Event 
+            </div>
+            <div class="description">
+              A conceptual pop-up event designed to unveil Kellogg’s new health-centric brand identity. Interactive stands introduce guests to five nutritious cereal flavors: Mixed Berries, Strawberry Banana, Honey Almond, Peaches and Cream, and Blueberry Lavender. Participants sample these innovations, receive promotional gifts, and have the option to purchase their favorites. The setting includes a mini breakfast bar for immediate tasting and a central logo display for brand immersion. Novel milk dispensers add a fun, practical touch to this engaging, flavor-forward showcase.
+            </div>
+        </div>
+        <div class="additional-images">
+            <div>
+                <img src="imgs/pop-up-1.jpg" alt="Pop Up Exterior" onclick="openFullscreen(this)">
+            </div>
+            <div>
+                <img src="imgs/pop-up-2.png" alt="Pop Up Interior" onclick="openFullscreen(this)">
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+      </div>
+    </div>
+  <footer class="main-footer">
+    <span class="main-footer-text">@ Chelsea Chun</span>
+  </footer> 
+  <div id="fullscreen-gallery" class="fullscreen-gallery">
+      <span class="close" onclick="closeFullscreen()">&times;</span>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="image-container">
+        <!-- Images will be appended here by JavaScript -->
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
