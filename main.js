@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const scrollBtn = document.getElementById("scrollBtn");
   const homepage = document.getElementById("homepage");
   const content = document.getElementById('content');
-  const secondaryPage = document.getElementById("secondaryPage");
+  const firstPage = document.getElementById("firstPage");
 
   const handleScroll = () => {
     const currentScrollTop = window.pageYOffset;
@@ -52,6 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   scrollBtn.addEventListener("click", () => {
-    scrollToElement(secondaryPage, 1200, 50); // Scrolls to 50 pixels above the top of secondaryPage
+    scrollToElement(firstPage, 1200, 50); // Scrolls to 50 pixels above the top of secondaryPage
   });
 });
