@@ -173,12 +173,24 @@ body.main-container::-webkit-scrollbar-thumb:hover {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.gallery-item video {
+.gallery-item img {
     max-width: 100%;
     height: auto;
     transition: transform 0.3s ease;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer; /* Indicate clickability */
+}
+
+.gallery-item video {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.gallery-item:hover video {
+  transform: scale(1.05);
 }
 
 .gallery-item-title {
@@ -212,7 +224,7 @@ body.main-container::-webkit-scrollbar-thumb:hover {
     pointer-events: none; 
 }
 
-.gallery-item:hover video {
+.gallery-item:hover img {
     transform: scale(1.05); 
 }
 
