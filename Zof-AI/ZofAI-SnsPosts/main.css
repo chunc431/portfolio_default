@@ -237,6 +237,7 @@ body.main-container::-webkit-scrollbar-thumb:hover {
   background: black;
   opacity: 0;
   transition: opacity 0.3s ease;
+  pointer-events: none; /* ✅ allow clicks to pass through */
 }
 
 .gallery-item:hover::after {
