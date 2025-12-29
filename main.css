@@ -215,11 +215,18 @@ body.main-container::-webkit-scrollbar-thumb:hover {
 	flex-direction: column;
 }
 
+/* ✅ UPDATED: grid spacing that actually shows */
 .grid-container {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 0.5rem; /* Keep smaller gaps between projects */
-	width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+
+  /* ✅ ADD these */
+  max-width: 1100px;   /* adjust: 1200, 1100, 1000 etc */
+  margin: 0 auto;      /* centers the grid */
 }
 
 .grid-item {
@@ -369,6 +376,8 @@ body.main-container::-webkit-scrollbar-thumb:hover {
 @media (max-width: 900px) {
   .grid-container {
     grid-template-columns: 1fr;  
+	/* optional: slightly smaller padding on small screens */
+	padding: 0 16px;
   }
 
   .add-page {

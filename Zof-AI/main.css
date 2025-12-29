@@ -141,11 +141,18 @@ body, html {
     color: #000000;
   }
 
-  .grid-container {
+.grid-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 0.5rem; /* Keep smaller gaps between projects */
+	grid-gap: 1.25rem;
 	width: 100%;
+
+	/* keep your existing inset spacing */
+	padding: 0 140px;
+	box-sizing: border-box;
+
+	/* ✅ add these to make tiles smaller */
+	margin: 0 auto;     /* center the grid */
 }
 
 .grid-item {
@@ -329,7 +336,9 @@ body.main-container::-webkit-scrollbar-thumb:hover {
     }
 
     .grid-container {
-        grid-template-columns: 1fr;  
+        grid-template-columns: 1fr;
+        padding: 0 16px;
+        max-width: 100%;
       }
 
     .add-page {
@@ -346,7 +355,6 @@ body.main-container::-webkit-scrollbar-thumb:hover {
 }
 
 @media (max-width: 600px) {
-
 
     .title, .title-sub {
         font-size: 1.5rem;
