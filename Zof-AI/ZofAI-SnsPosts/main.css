@@ -248,6 +248,25 @@ body.main-container::-webkit-scrollbar-thumb:hover {
   opacity: 1;
 }
 
+/* ================= X SECTION ONLY ================= */
+
+.gallery-grid.x-section .gallery-item {
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 420px;
+}
+
+.gallery-grid.x-section .gallery-item img,
+.gallery-grid.x-section .gallery-item video {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
 /* ================= FULLSCREEN GALLERY ================= */
 
 .fullscreen-gallery {
